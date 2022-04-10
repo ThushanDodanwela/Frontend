@@ -69,7 +69,7 @@
           <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">
               <div class="header-left">
-                <div class="dashboard_bar">Riders</div>
+                <div class="dashboard_bar">Driver</div>
               </div>
               <ul class="navbar-nav header-right">
                 <li class="nav-item">
@@ -252,7 +252,7 @@
               </li>
   
               <li>
-                <a class="ai-icon" href="ai-icon" aria-expanded="false">
+                <a class="ai-icon" href="Statements.html" aria-expanded="false">
                   <i class="fa fa-file"></i>
                   <span class="nav-text">Statements</span>
                 </a>
@@ -309,10 +309,10 @@
           <div class="col-lg-12">
             
               <div >
-                <a href="AddRider.html">
+                <a href="AddDriver.html">
                 <button type="button" class="btn  btn-primary"; style="margin-left: 40px; margin-right: 10px;";><span
                   class="btn-icon-left text-primary"><i class="fa fa-plus color-success"></i>
-              </span>Add</button>
+              </span>Add Driver</button>
             </a>
               <button type="button" class="btn  btn-light"><span
                 class="btn-icon-left text-dark"><i class="fa fa-angle-double-left "></i>
@@ -334,10 +334,13 @@
                     <thead>
                       <tr>
                         <th class="width80">No</th>
-                        <th>Rider Name</th>
+                        <th>Driver Name</th>
                         <th>Email</th>
                         <th>Contact No.</th>
                         <th>Review</th>
+                        <th>Vehicle Type</th>
+                        <th>Offline/Online</th>
+                        <th>Status</th>
                         <th>Other Action</th>
                         <th>Action</th>
                         
@@ -351,6 +354,9 @@
                         <td>J******@gmail.com</td>
                         <td>*******67</td>
                         <td>5</td>
+                        <td>Sedan</td>
+                        <td><div class="d-flex align-items-center"><i class="fa fa-circle text-danger mr-1"></i> Offline</div></td>
+                        <td><span class="badge badge-success">Approved</span>
                         <td>
 													<div class="dropdown">
 														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
@@ -358,14 +364,15 @@
 														</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
+															<a class="dropdown-item" href="Statements.html">Statements</a>
+                                                            <a class="dropdown-item" href="#">Document List</a>
 														</div>
 													</div>
 												</td>
 
                         <td>
 													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+														<a href="EditDriver.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
                             <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
                            
                               
@@ -375,11 +382,14 @@
                       </tr>
 
                       <tr>
-                        <td><strong>01</strong></td>
+                        <td><strong>02</strong></td>
                         <td>James Witwicky</td>
                         <td>J******@gmail.com</td>
                         <td>*******67</td>
-                        <td>5</td>
+                        <td>4.5</td>
+                        <td>Luxury</td>
+                        <td><div class="d-flex align-items-center"><i class="fa fa-circle text-success mr-1"></i> Online</div></td>
+                        <td><span class="badge badge-success">Approved</span>
                         <td>
 													<div class="dropdown">
 														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
@@ -387,15 +397,18 @@
 														</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
+															<a class="dropdown-item" href="Statements.html">Statements</a>
+                                                            <a class="dropdown-item" href="#">Document List</a>
 														</div>
 													</div>
 												</td>
 
                         <td>
 													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="EditDriver.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                           
+                              
 													</div>
 												</td>
                         
@@ -403,39 +416,14 @@
 
 
                       <tr>
-                        <td><strong>01</strong></td>
+                        <td><strong>03</strong></td>
                         <td>James Witwicky</td>
                         <td>J******@gmail.com</td>
                         <td>*******67</td>
                         <td>5</td>
-                        <td>
-													<div class="dropdown">
-														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
-															<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg>
-														</button>
-														<div class="dropdown-menu">
-                              <a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
-														</div>
-													</div>
-												</td>
-
-                        <td>
-													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>
-												</td>
-                        
-                      </tr>
-
-
-                      <tr>
-                        <td><strong>01</strong></td>
-                        <td>James Witwicky</td>
-                        <td>J******@gmail.com</td>
-                        <td>*******67</td>
-                        <td>5</td>
+                        <td>Sedan</td>
+                        <td><div class="d-flex align-items-center"><i class="fa fa-circle text-danger mr-1"></i> Offline</div></td>
+                        <td><span class="badge badge-success">Approved</span>
                         <td>
 													<div class="dropdown">
 														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
@@ -443,19 +431,24 @@
 														</button>
 														<div class="dropdown-menu">
 															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
+															<a class="dropdown-item" href="Statements.html">Statements</a>
+                                                            <a class="dropdown-item" href="#">Document List</a>
 														</div>
 													</div>
 												</td>
 
                         <td>
 													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="EditDriver.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                           
+                              
 													</div>
 												</td>
                         
                       </tr>
+
+                      
                       
                       
                       

@@ -17,8 +17,11 @@
       href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
       rel="stylesheet"
     />
+    <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -69,7 +72,7 @@
           <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">
               <div class="header-left">
-                <div class="dashboard_bar">Riders</div>
+                <div class="dashboard_bar">Drivers Log</div>
               </div>
               <ul class="navbar-nav header-right">
                 <li class="nav-item">
@@ -252,7 +255,7 @@
               </li>
   
               <li>
-                <a class="ai-icon" href="ai-icon" aria-expanded="false">
+                <a class="ai-icon" href="Statements.html" aria-expanded="false">
                   <i class="fa fa-file"></i>
                   <span class="nav-text">Statements</span>
                 </a>
@@ -306,19 +309,38 @@
       <div class="content-body">
         <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-6">
             
-              <div >
-                <a href="AddRider.html">
-                <button type="button" class="btn  btn-primary"; style="margin-left: 40px; margin-right: 10px;";><span
-                  class="btn-icon-left text-primary"><i class="fa fa-plus color-success"></i>
-              </span>Add</button>
-            </a>
-              <button type="button" class="btn  btn-light"><span
-                class="btn-icon-left text-dark"><i class="fa fa-angle-double-left "></i>
-            </span>Back</button>
-              </div>
+              <div class="example">
+                    
+                    <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2022 - 01/31/2022">
+                </div>
+                </div>
 
+
+                
+                <div class="col-lg-6">
+           
+            <div class="input-group mb-3 diet-search mr-4">
+                
+                <input type="text" class="form-control" placeholder=" Search by Name or Contact No.">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                       
+           </div>
+        </div>
+
+        </div>
+
+        <a href="javascript:void(0);" class="btn rounded  btn-primary mb-3 fa fa-filter">
+            
+        </a>
+        
+
+        <div class="row">
+
+            <div class="col-lg-12">
               <div class="card-body">
                 <button type="button" class="btn btn-square btn-outline-light">Copy</button>
                 <button type="button" class="btn btn-square btn-outline-light">CSV</button>
@@ -333,129 +355,23 @@
                   <table class="table table-responsive-md">
                     <thead>
                       <tr>
-                        <th class="width80">No</th>
-                        <th>Rider Name</th>
-                        <th>Email</th>
-                        <th>Contact No.</th>
-                        <th>Review</th>
-                        <th>Other Action</th>
+                        <th class="width80">ID</th>
+                        <th>Location</th>
+                        <th>Restrict Area</th>
+                        <th>Starting Time</th>
+                        <th>Ending Time</th>
+                        
+                        <th>Status</th>
+                      
                         <th>Action</th>
                         
                        
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><strong>01</strong></td>
-                        <td>James Witwicky</td>
-                        <td>J******@gmail.com</td>
-                        <td>*******67</td>
-                        <td>5</td>
-                        <td>
-													<div class="dropdown">
-														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
-															<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg>
-														</button>
-														<div class="dropdown-menu">
-															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
-														</div>
-													</div>
-												</td>
+                      
 
-                        <td>
-													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                           
-                              
-													</div>
-												</td>
-                        
-                      </tr>
-
-                      <tr>
-                        <td><strong>01</strong></td>
-                        <td>James Witwicky</td>
-                        <td>J******@gmail.com</td>
-                        <td>*******67</td>
-                        <td>5</td>
-                        <td>
-													<div class="dropdown">
-														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
-															<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg>
-														</button>
-														<div class="dropdown-menu">
-															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
-														</div>
-													</div>
-												</td>
-
-                        <td>
-													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>
-												</td>
-                        
-                      </tr>
-
-
-                      <tr>
-                        <td><strong>01</strong></td>
-                        <td>James Witwicky</td>
-                        <td>J******@gmail.com</td>
-                        <td>*******67</td>
-                        <td>5</td>
-                        <td>
-													<div class="dropdown">
-														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
-															<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg>
-														</button>
-														<div class="dropdown-menu">
-                              <a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
-														</div>
-													</div>
-												</td>
-
-                        <td>
-													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>
-												</td>
-                        
-                      </tr>
-
-
-                      <tr>
-                        <td><strong>01</strong></td>
-                        <td>James Witwicky</td>
-                        <td>J******@gmail.com</td>
-                        <td>*******67</td>
-                        <td>5</td>
-                        <td>
-													<div class="dropdown">
-														<button type="button" class="btn btn-light light sharp" data-toggle="dropdown">
-															<svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="5" cy="12" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="19" cy="12" r="2"/></g></svg>
-														</button>
-														<div class="dropdown-menu">
-															<a class="dropdown-item" href="RideHistory.html">Ride History</a>
-															<a class="dropdown-item" href="#">Active</a>
-														</div>
-													</div>
-												</td>
-
-                        <td>
-													<div class="d-flex">
-														<a href="EditRider.html" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-													</div>
-												</td>
-                        
-                      </tr>
+                      
                       
                       
                       
@@ -499,28 +415,43 @@
 ***********************************-->
 <!-- Required vendors -->
 
-<script src="./vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="./js/plugins-init/sweetalert.init.js"></script>
-<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+
+<!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+    
 
 
-<script src="./vendor/owl-carousel/owl.carousel.js"></script>
-
-<!-- Chart piety plugin files -->
-<script src="./vendor/peity/jquery.peity.min.js"></script>
-
-<script src="./vendor/global/global.min.js"></script>
-<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="./js/custom.min.js"></script>
-<script src="./js/deznav-init.js"></script>
-
-<!-- Chart Morris plugin files -->
-<script src="./vendor/morris/raphael-min.js"></script>
-<script src="./vendor/morris/morris.min.js"></script>
-<script src="./js/plugins-init/morris-init.js"></script>
+    <!-- Daterangepicker -->
+    <!-- momment js is must -->
+    <script src="./vendor/moment/moment.min.js"></script>
+    <script src="./vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+    
+    
+    <!-- pickdate -->
+    <script src="./vendor/pickadate/picker.js"></script>
+    <script src="./vendor/pickadate/picker.time.js"></script>
+    <script src="./vendor/pickadate/picker.date.js"></script>
 
 
-<!-- Dashboard 1 -->
+
+    <!-- Daterangepicker -->
+    <script src="./js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Clockpicker init -->
+    <script src="./js/plugins-init/clock-picker-init.js"></script>
+   
+    <!-- Pickdate -->
+    <script src="./js/plugins-init/pickadate-init.js"></script>
+
+    
 
 </body>
 </html>
