@@ -26,6 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <div id="preloader">
@@ -72,7 +73,7 @@
           <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">
               <div class="header-left">
-                <div class="dashboard_bar">Pending Rides</div>
+                <div class="dashboard_bar">Manual Ride Booking</div>
               </div>
               <ul class="navbar-nav header-right">
                 <li class="nav-item">
@@ -308,76 +309,157 @@
         ***********************************-->
       <div class="content-body">
         <div class="container-fluid">
-        <div class="row">
-           
-            <div class="col-lg-4">
-           
-                <div class="input-group mb-3 diet-search mr-4">
-                    
-                    <input type="text" class="form-control" placeholder=" Rider Name">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </div>
-                           
-               </div>
-            </div>
-
-
+            <div class="row">
                 
+                    <div class="col-lg-12">
+                   
+                          <div class="basic-form">
+                              <form>
+      
+                                  <div class="form-row">
+                                      <div class="form-group col-lg-4">
+                                          <label>Rider Contact No.</label>
+                                          <input type="tel" class="form-control" placeholder="Contact No.">
+                                      </div>
+                                      <div class="form-group col-lg-4">
+                                          <label>Rider Name</label>
+                                          <input type="text" class="form-control" placeholder="Rider Name">
+                                      </div>
+                                      <div class="form-group col-lg-4">
+                                          <label>Rider Email</label>
+                                          <input type="email" class="form-control" placeholder="Email">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label>Pickup Address</label>
+                                          <input type="text" class="form-control" placeholder="Enter Address">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label>Destination Address</label>
+                                          <input type="text" class="form-control" placeholder="Enter Address">
+                                      </div>
+                                      <div class="form-group col-lg-12">
+                                          <button id="myBtn" class="btn btn-primary">Add Way-Point</button>
+                                      </div>
+                                      <div class="form-group col-lg-4" >
+                                        <label>Pickup Date</label>
+                                       
+                                        <inputname="datepicker" class=" form-control datepicker-default" id="datepicker" style="fill: white;">
+                                    </div>
+
+                                    <div class="form-group col-lg-4">
+                                        <label>Pickup Time</label>
+                                      
+                                        <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
+                                            <input type="text" class="form-control" value="13:14"> <span class="input-group-append"><span class="input-group-text"><i
+                                                        class="fa fa-clock-o"></i></span></span>
+                                        </div>
+                                    </div>
     
+                                    
+    
+      
+      
+                                   
+      
+                                                              
+                                   
+      
+                                      <div class="form-group col-lg-6" style="margin-top: 3%;">
+                                          
+                                         
+                                          <div class="card-body">
+                                              <div class="mapouter">
+                                                  <div class="gmap_canvas">
+                                                      <iframe class="border-0" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                                                  </div>
+                                              </div>
+                                         
+                                      </div>
+      
+                                
+                                  </div>
+                                  <div class="form-group col-lg-6" style="margin-top: 3%;">
+                                 
+                                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="text-muted">Ride Estimate</span>
+                                       
+                                    </h4>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                            <div>
+                                                <h6 class="my-0">Base fare</h6>
+                                               
+                                            </div>
+                                            <span class="text-muted">$8.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                            <div>
+                                                <h6 class="my-0">Distance</h6>
+                                               
+                                            </div>
+                                            <span class="text-muted">0.00 Km</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                            <div>
+                                                <h6 class="my-0">ETA</h6>
+                                                
+                                            </div>
+                                            <span class="text-muted">00:00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                            <div>
+                                                <h6 class="my-0">Estimated Fare Total</h6>
+                                                
+                                            </div>
+                                            <span class="text-muted">$ 0.00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                            <div>
+                                                <h6 class="my-0">Tax</h6>
+                                                
+                                            </div>
+                                            <span class="text-muted">$ 0.00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between active">
+                                            <div class="text-white">
+                                                <h6 class="my-0 text-white">Total (USD)</h6>
+                                                
+                                            </div>
+                                            <span class="text-white"><strong>$0.00</strong></span>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                           
+
+
+
+                              </div>
+                              
+                              </form>
+                          </div>
+                          
+                      </div>
+      
+                      <div style="margin-bottom: 20px; margin-left: 10px;">
+                          <button type="submit" class="btn btn-primary" >Book Ride</button>
+                          <button type="reset" class="btn btn-light">Cancel</button>
+          
+                      </div>
+      
+                     
+                  </div>
+                  
+                  
+
+      
+
+      
         
 
-        <div class="row">
-
-            <div class="col-lg-12">
-              <div class="card-body">
-                <button type="button" class="btn btn-square btn-outline-light">Copy</button>
-                <button type="button" class="btn btn-square btn-outline-light">CSV</button>
-                <button type="button" class="btn btn-square btn-outline-light">Excel</button>
-                <button type="button" class="btn btn-square btn-outline-light">PDF</button>
-              </div>
-            
-               
-              <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-responsive-sm">
-                    <thead>
-                     
-                        <tr>
-                            <th class="width80">Rider ID</th>
-                            <th>Ride Type</th>
-                            <th>Driver Name</th>
-                            <th>Pick Date & Time</th>
-                            <th>Pick/Drop Location</th>
-                            <th>Cancelled By</th>
-                            <th>Location</th>
-                          
-                          </tr>
-                        </thead>
-                        <tbody>
-                                                 
-    
-    
-                          
-    
-                        
-    
-    
-    
-                          
-                          
-                          
-                        </tbody>
-                        
-                       
-                   
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+       
           </div>
 
 
@@ -446,8 +528,22 @@
    
     <!-- Pickdate -->
     <script src="./js/plugins-init/pickadate-init.js"></script>
+    <script>
+    var myBtn = document.getElementById('myBtn');
 
+    //add click function
+    myBtn.addEventListener('click', function(event) {
+      addField();
+    });
     
+    //it's more efficient to get the form reference outside of the function, rather than getting it each time
+    var form = document.getElementById('myForm');
+    
+    function addField() {
+      var input = document.createElement('input');
+      form.appendChild(input);
+    }
+</script>
 
 </body>
 </html>
