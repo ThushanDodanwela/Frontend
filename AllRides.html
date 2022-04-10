@@ -17,8 +17,11 @@
       href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
       rel="stylesheet"
     />
+    <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -69,7 +72,7 @@
           <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">
               <div class="header-left">
-                <div class="dashboard_bar">Ride Details</div>
+                <div class="dashboard_bar">All Rides</div>
               </div>
               <ul class="navbar-nav header-right">
                 <li class="nav-item">
@@ -252,7 +255,7 @@
               </li>
   
               <li>
-                <a class="ai-icon" href="ai-icon" aria-expanded="false">
+                <a class="ai-icon" href="Statements.html" aria-expanded="false">
                   <i class="fa fa-file"></i>
                   <span class="nav-text">Statements</span>
                 </a>
@@ -305,186 +308,214 @@
         ***********************************-->
       <div class="content-body">
         <div class="container-fluid">
+        <div class="row">
+           
+            <div class="col-lg-4">
+           
+                <div class="input-group mb-3 diet-search mr-4">
+                    
+                    <input type="text" class="form-control" placeholder=" Rider Name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                           
+               </div>
+            </div>
+
+
+                
+                <div class="col-lg-4">
+           
+            <div class="input-group mb-3 diet-search mr-4">
+                
+                <input type="text" class="form-control" placeholder=" Driver Name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+                       
+           </div>
+        </div>
+
+        <div class="col-lg-4">
+            
+            <div class="example">
+                  
+                <input name="datepicker" class="datepicker-default form-control" id="datepicker" placeholder="Pick Date">
+                
+              </div>
+              </div>
+
+        </div>
 
         <div class="row">
-          <div class="col-lg-12">
-            
-              <div >
-                
-              <a href="AllRides.html">
-                <button type="button" class="btn light btn-light"; style="margin-left: 40px; margin-right: 10px; margin-bottom: 10px;";>Back</button>
-                </a>
+            <div class="col-lg-4" >
               
-              </div>
-
-              </div>
-
-
-              <div class=" col-lg-6">
-                <div class="card" style="margin-left: 40px;">
-                    <div class="card-header">
-                        <h4 class="card-title">Ride Completed</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Rider ID</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Rider Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Driver Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Ride Start Time</label>
-                                    <div class="col-sm-9">
-                                        <input type="tel" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Ride End Time</label>
-                                    <div class="col-sm-9">
-                                        <input type="tel" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Pickup Address</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Destination Address</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Ride Type</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Vehicle Type</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Base Fare</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Total Distance</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Ride Fare</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Tax</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Discount</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Tip</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Total Amount</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Payment Method</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Payment Status</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" placeholder=" ">
-                                    </div>
-                                </div>
-                                
-                               
-                                
-                                <div class="form-group row" style="margin-top: 10px;">
-                                    <div class="col-sm-10">
-                                        <button type="" class="btn btn-success">Completed</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" col-lg-6">
+                <div class="form-row align-items-center">
+                       
+                           
+                    <select class="mr-lg-4 default-select" id="inlineFormCustomSelect">
+                        <option selected>Service Type</option>
+                        <option value="1">Mini Van</option>
+                        <option value="2">Luxury</option>
+                        <option value="3">Package</option>
+                        <option value="4">Lady Driver</option>
+                    </select>
                 
-                  
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe class="border-0" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-                            </div>
+            </div>
+              
+                  </div>
+
+                  <div class="col-lg-4">
+              
+                    <div class="form-row align-items-center">
+                       
+                           
+                            <select class="mr-lg-4 default-select" id="inlineFormCustomSelect">
+                                <option selected>Status</option>
+                                <option value="1">Complete</option>
+                                <option value="2">Running</option>
+                                <option value="3">Cancelled</option>
+                            </select>
+                        
+                    </div>
+                      </div>
+
                       
-                   
-                </div>
+                  <div class="col-lg-4">
+              
+                    <div class="form-row align-items-center">
+                       
+                           
+                            <select class="mr-lg-4 default-select" id="inlineFormCustomSelect">
+                                <option selected>Ride Type</option>
+                                <option value="1">Now</option>
+                                <option value="2">Schedule</option>
+                               
+                            </select>
+                        
+                    </div>
+                      </div>
+  
+  
+  
+                  
+       
+  
+          </div>
 
-            </div>
-                </div>
+        <a href="javascript:void(0);" class="btn rounded  btn-primary mb-3 fa fa-filter" style="margin-top: 10px;">
             
-              
-              
+        </a>
+        
+
+        <div class="row">
+
+            <div class="col-lg-12">
+              <div class="card-body">
+                <button type="button" class="btn btn-square btn-outline-light">Copy</button>
+                <button type="button" class="btn btn-square btn-outline-light">CSV</button>
+                <button type="button" class="btn btn-square btn-outline-light">Excel</button>
+                <button type="button" class="btn btn-square btn-outline-light">PDF</button>
+              </div>
+            
+               
+              <div class="card">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-responsive-tiny">
+                    <thead>
+                     
+                        <tr>
+                            <th class="width80">Rider ID</th>
+                            <th>Ride Type</th>
+                            <th>Driver Name</th>
+                            <th>Pick Date & Time</th>
+                            <th>End Date and Time</th>
+                            <th>Pick/Drop Location</th>
+                            <th>Vehicle Type</th>
+                            <th>Status </th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><strong>#55139</strong></td>
+                            <td>Now</td>
+                            <td>James Witwicky</td>
+                            <td>21.03.2022 <br> 10.34 am </td>
+                            <td>21.03.2022 <br> 10.52 am </td>
+                            <td><small>Corner Street 5th London <br> Corner Street 5th London </small></td>
+                            <td>Sedan</td>
+                            
+                            <td><span class="badge light badge-success">Completed</span> <br>
+                            <a href="CompletedRideInvoice.html">View Invoice</a></td>
+                            
+                                              
+                            
+                          </tr>
+    
+                          <tr>
+                            <td><strong>#55139</strong></td>
+                            <td>Schedule</td>
+                            <td>James Witwicky</td>
+                            <td>21.03.2022 <br> 10.34 am </td>
+                            <td>21.03.2022 <br> 10.52 am </td>
+                            <td><small>Corner Street 5th London <br> Corner Street 5th London </small></td>
+                            <td>Luxury</td>
+                            
+                            <td><span class="badge light badge-primary">Running</span>
+                           </td>
+                            
+                                              
+                            
+                          </tr>
+    
+    
+                          <tr>
+                            <td><strong>#55139</strong></td>
+                            <td>Now</td>
+                            <td>James Witwicky</td>
+                            <td>21.03.2022 <br> 10.34 am </td>
+                            <td>21.03.2022 <br> 10.52 am </td>
+                            <td><small>Corner Street 5th London <br> Corner Street 5th London </small></td>
+                            <td>Hatchback</td>
+                            
+                            <td><span class="badge light badge-danger">Cancelled</span> <br>
+                            <a href="CancelledRideInvoice.html">View Invoice</a></td>
+                            
+                                              
+                            
+                          </tr>
+    
+    
+                        
+    
+    
+    
+                          
+                          
+                          
+                        </tbody>
+                        
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+
+                      
+                      
+                      
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
+          </div>
+          </div>
+          </div>
+
 
        
 <!--**********************************
@@ -517,25 +548,42 @@
 <!-- Required vendors -->
 
 
-<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+<!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	
+    
 
 
-<script src="./vendor/owl-carousel/owl.carousel.js"></script>
+    <!-- Daterangepicker -->
+    <!-- momment js is must -->
+    <script src="./vendor/moment/moment.min.js"></script>
+    <script src="./vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- clockpicker -->
+    <script src="./vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+    
+    
+    <!-- pickdate -->
+    <script src="./vendor/pickadate/picker.js"></script>
+    <script src="./vendor/pickadate/picker.time.js"></script>
+    <script src="./vendor/pickadate/picker.date.js"></script>
 
-<!-- Chart piety plugin files -->
-<script src="./vendor/peity/jquery.peity.min.js"></script>
 
-<script src="./vendor/global/global.min.js"></script>
-<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="./js/custom.min.js"></script>
-<script src="./js/deznav-init.js"></script>
 
-<!-- Chart Morris plugin files -->
-<script src="./vendor/morris/raphael-min.js"></script>
-<script src="./vendor/morris/morris.min.js"></script>
-<script src="./js/plugins-init/morris-init.js"></script>
+    <!-- Daterangepicker -->
+    <script src="./js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Clockpicker init -->
+    <script src="./js/plugins-init/clock-picker-init.js"></script>
+   
+    <!-- Pickdate -->
+    <script src="./js/plugins-init/pickadate-init.js"></script>
 
-<!-- Dashboard 1 -->
+    
 
 </body>
 </html>
