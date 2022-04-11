@@ -17,11 +17,8 @@
       href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
       rel="stylesheet"
     />
-    <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
-    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -72,7 +69,7 @@
           <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">
               <div class="header-left">
-                <div class="dashboard_bar">Sub Admin</div>
+                <div class="dashboard_bar">Add Service Type</div>
               </div>
               <ul class="navbar-nav header-right">
                 <li class="nav-item">
@@ -255,7 +252,7 @@
               </li>
   
               <li>
-                <a class="ai-icon" href="Statements.html" aria-expanded="false">
+                <a class="ai-icon" href="ai-icon" aria-expanded="false">
                   <i class="fa fa-file"></i>
                   <span class="nav-text">Statements</span>
                 </a>
@@ -308,95 +305,104 @@
         ***********************************-->
       <div class="content-body">
         <div class="container-fluid">
+
         <div class="row">
-            <div class = col-lg-12>
-                <div >
-                    <a href="AddsubAdmin.html">
-                    <button type="button" class="btn  btn-primary"; ><span
-                      class="btn-icon-left text-primary"><i class="fa fa-plus color-success"></i>
-                  </span>Add Sub Admin</button>
-                </a>
-                  <button type="button" class="btn  btn-light" style="margin-left: 5px;"><span
-                    class="btn-icon-left text-dark"><i class="fa fa-angle-double-left "></i>
-                </span>Back</button>
-                  </div>
-
-                  </div>
-           
-          <div class="col-lg-6"style ="margin-top: 4%;" >
+          <div class="col-lg-12">
             
-              <div class="example">
-                <p class="mb-1">Date Created</p>           
-                    <input name="datepicker" class="datepicker-default form-control" id="datepicker" placeholder="Select date created">
-                </div>
-                </div>
-
-
+              <div >
                 
-                <div class="col-lg-6" style ="margin-top: 4%;" >
-           
-            
-                    <p class="mb-1">Default picker</p>
-                <input type="text" class="form-control" placeholder="Search...">
-               
-                                  
-                       
-           
-        </div>
-
-        </div>
-
-        <a href="javascript:void(0);" class="btn rounded  btn-primary mb-3 fa fa-search" style="margin-top: 5px;">
-            
-        </a>
-        
-
-        <div class="row">
-
-            <div class="col-lg-12">
-              <div class="card-body">
-                <button type="button" class="btn btn-square btn-outline-light">Copy</button>
-                <button type="button" class="btn btn-square btn-outline-light">CSV</button>
-                <button type="button" class="btn btn-square btn-outline-light">Excel</button>
-                <button type="button" class="btn btn-square btn-outline-light">PDF</button>
+              <a href="ServiceType.html">
+                <button type="button" class="btn light btn-light"; style="margin-left: 40px; margin-right: 10px;";>Back</button>
+                </a>
+              
               </div>
-            
-               
-              <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-responsive-sm">
-                    <thead>
-                      <tr>
-                        <th class="width80">No</th>
-                        <th>Name</th>
-                        <th>Job</th>
-                        <th>Email</th>
-                        <th>Contact No.</th>
-                        
-                        <th>Date Created</th>
-                      
-                        <th>Action</th>
-                        
-                       
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
 
-                      
-                      
-                      
-                      
-                    </tbody>
-                  </table>
+              </div>
+              <div class="col-lg-8" style="margin-left:5%; margin-bottom: 10%;">
+              <div class="card" style="margin: 5%;">
+               
+                <div class="card-body">
+                    <div class="basic-form">
+                        <form>
+
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <label>Service Type</label>
+                                    <input type="text" class="form-control" placeholder="Service Type">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label>Base Fare</label>
+                                    <input type="text" class="form-control" placeholder="base Fare">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label>Base Distance</label>
+                                    <input type="text" class="form-control" placeholder="Base Distance">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label>Distance Price</label>
+                                    <input type="text" class="form-control" placeholder="Distance Price">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Base Distance</label>
+                                    <input type="text" class="form-control" placeholder="Base Distance">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label>Minute Price</label>
+                                    <input type="text" class="form-control" placeholder="Minute Price">
+                                </div>
+
+                                <div class="form-group col-lg-12">
+                                    <label>Waiting Time Per Minute Charge</label>
+                                    <input type="text" class="form-control" placeholder="Waiting Time Per Minute Charge">
+                                </div>
+                                    
+                                
+                                
+
+                                <div class="form-row align-items-center">
+                                    <div class="col-auto my-1">
+                                        <label class="mr-sm-2">Select Status</label>
+                                        <select class="mr-sm-2 default-select" id="inlineFormCustomSelect">
+                                            <option selected>Choose...</option>
+                                            <option value="1">ON</option>
+                                            <option value="2">OFF</option>
+                                           
+                                        </select>
+                                    </div>
+
+                                   
+
+                                </div>
+
+                                                        
+                             </div>
+
+                               
+                        
+                        
+                        </form>
+                    </div>
+                    
                 </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
 
+                <div style="margin-bottom: 20px; margin-left: 10px; margin-top: 5px;">
+                    <button type="submit" class="btn btn-primary" >Add Service </button>
+    
+                </div>
+
+               
+            </div>
+            
+            </div>
+                </div>
+            
+              
+              
+            </div>
 
        
 <!--**********************************
@@ -429,42 +435,25 @@
 <!-- Required vendors -->
 
 
-<!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="./js/custom.min.js"></script>
-	<script src="./js/deznav-init.js"></script>
-	
-    
+<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
 
 
-    <!-- Daterangepicker -->
-    <!-- momment js is must -->
-    <script src="./vendor/moment/moment.min.js"></script>
-    <script src="./vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- clockpicker -->
-    <script src="./vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
-    
-    
-    <!-- pickdate -->
-    <script src="./vendor/pickadate/picker.js"></script>
-    <script src="./vendor/pickadate/picker.time.js"></script>
-    <script src="./vendor/pickadate/picker.date.js"></script>
+<script src="./vendor/owl-carousel/owl.carousel.js"></script>
 
+<!-- Chart piety plugin files -->
+<script src="./vendor/peity/jquery.peity.min.js"></script>
 
+<script src="./vendor/global/global.min.js"></script>
+<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="./js/custom.min.js"></script>
+<script src="./js/deznav-init.js"></script>
 
-    <!-- Daterangepicker -->
-    <script src="./js/plugins-init/bs-daterange-picker-init.js"></script>
-    <!-- Clockpicker init -->
-    <script src="./js/plugins-init/clock-picker-init.js"></script>
-   
-    <!-- Pickdate -->
-    <script src="./js/plugins-init/pickadate-init.js"></script>
+<!-- Chart Morris plugin files -->
+<script src="./vendor/morris/raphael-min.js"></script>
+<script src="./vendor/morris/morris.min.js"></script>
+<script src="./js/plugins-init/morris-init.js"></script>
 
-    
+<!-- Dashboard 1 -->
 
 </body>
 </html>
