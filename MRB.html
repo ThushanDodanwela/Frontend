@@ -26,6 +26,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="./vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="./vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Pick date -->
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="./vendor/pickadate/themes/default.date.css">
+    <!-- Custom Stylesheet -->
+	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+	
+    <!-- Clockpicker -->
+    <link href="./vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
     
   </head>
   <body>
@@ -343,16 +359,16 @@
                                       <div class="form-group col-lg-4" >
                                         <label>Pickup Date</label>
                                        
-                                        <inputname="datepicker" class=" form-control datepicker-default" id="datepicker" style="fill: white;">
+                                        <inputname="datepicker" class=" form-control datepicker-default" id="datepicker">
                                     </div>
 
                                     <div class="form-group col-lg-4">
                                         <label>Pickup Time</label>
                                       
                                         <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
-                                            <input type="text" class="form-control" value="13:14"> <span class="input-group-append"><span class="input-group-text"><i
-                                                        class="fa fa-clock-o"></i></span></span>
-                                        </div>
+                                        <input type="text" class="form-control" value="13:14"> <span class="input-group-append"><span class="input-group-text"><i
+                                                    class="fa fa-clock-o"></i></span></span>
+                                    </div>
                                     </div>
     
                                     
@@ -528,22 +544,7 @@
    
     <!-- Pickdate -->
     <script src="./js/plugins-init/pickadate-init.js"></script>
-    <script>
-    var myBtn = document.getElementById('myBtn');
-
-    //add click function
-    myBtn.addEventListener('click', function(event) {
-      addField();
-    });
     
-    //it's more efficient to get the form reference outside of the function, rather than getting it each time
-    var form = document.getElementById('myForm');
-    
-    function addField() {
-      var input = document.createElement('input');
-      form.appendChild(input);
-    }
-</script>
 
 </body>
 </html>
