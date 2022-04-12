@@ -22672,9 +22672,9 @@ input[type="checkbox"]:checked:after {
   border-color: #0B2A97; }
 
 .datepicker.datepicker-dropdown {
-  background: #f2f4fa;
+  background: #ffffff;
   border-radius: 1px;
-  border: 1px solid #EEEEEE; }
+  border: 1px solid #ffffff; }
   .datepicker.datepicker-dropdown td.day, .datepicker.datepicker-dropdown th.next, .datepicker.datepicker-dropdown th.prev {
     height: 30px;
     width: 30px !important;
@@ -22709,10 +22709,10 @@ input[type="checkbox"]:checked:after {
 .picker__select--month, .picker__select--year {
   height: 2.5em; }
 .picker__input {
-  background-color: transparent !important; }
+  background-color: #fff !important; }
   [data-theme-version="dark"] .picker__input {
     background-color: transparent !important;
-    border: 1px solid #333a54; }
+    border: 2px solid #fff; }
 
 .asColorPicker-wrap .form-control {
   border-top-right-radius: 0;

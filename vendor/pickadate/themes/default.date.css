@@ -2,9 +2,11 @@
 .picker__header,
 .picker__table {
   text-align: center;
+  
 }
 .picker__box {
   padding: 0 1em;
+  
 }
 .picker__header {
   position: relative;
